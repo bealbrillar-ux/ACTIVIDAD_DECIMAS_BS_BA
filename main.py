@@ -47,7 +47,7 @@ while acceso:
         nombre = str(input("Ingrese titulo del libro a modificar: ")).title()
         modificar_libro(nombre)
     elif opcion == 8:
-        print("")
+        mostrar_estadisticas()
     else:
         print("Gracias por su visita")
         break
