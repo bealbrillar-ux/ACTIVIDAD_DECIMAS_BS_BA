@@ -145,3 +145,17 @@ def modificar_libro(nombre):
     else:
         print("No se han agregado libros aun.")
         time.sleep(1)
+        
+#opción 8
+def mostrar_estadisticas(nombre):
+    total = len(libros)
+    contador_disponibles = 0
+    contador_prestados = 0
+    for x in libros:
+        if x["estado"] == True:
+            contador_disponibles += 1
+        else:
+            contador_prestados += 1
+    print(f"Cantidad total de libros: {total}")
+    print(f"Cantidad de libros disponibles: {contador_disponibles}")
+    print(f"Cantidad de libros prestados: {contador_prestados}")
