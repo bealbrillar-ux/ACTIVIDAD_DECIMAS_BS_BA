@@ -43,10 +43,9 @@ while acceso:
     elif opcion == 6:
         nombre = str(input("Ingrese titulo del libro a eliminar: ")).title()
         eliminar_libro(nombre)
-        
-        print("")
     elif opcion == 7:
-        print("")
+        nombre = str(input("Ingrese titulo del libro a modificar: ")).title()
+        modificar_libro(nombre)
     elif opcion == 8:
         print("")
     else:
