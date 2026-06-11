@@ -1,6 +1,7 @@
 import time
 libros = []
 
+
 #OPCION 1
 def agregar_libro():
     acceso = True
@@ -25,6 +26,7 @@ def agregar_libro():
     libros.append(libro)
     return libro
 
+
 #opcion 2
 def mostrar_libros():
     if len(libros) > 0:
@@ -37,6 +39,7 @@ def mostrar_libros():
     else:
         print("No se han agregado libros aun.")
         time.sleep(1)
+
 
 #opcion 3
 def buscar_libro(nombre):
@@ -56,6 +59,7 @@ def buscar_libro(nombre):
     else:
         print("No se han agregado libros aun.")
         time.sleep(1)
+
 
 #opcion 4
 def prestar_libro(nombre):
@@ -80,6 +84,7 @@ def prestar_libro(nombre):
         print("No se han agregado libros aun.")
         time.sleep(1)
 
+
 #opcion 5
 def devolver_libro(nombre):
     encontrado = False
@@ -103,6 +108,7 @@ def devolver_libro(nombre):
         print("No se han agregado libros aun.")
         time.sleep(1)
         
+
 #opcion 6
 def eliminar_libro(nombre):
     if len(libros) > 0:
@@ -120,6 +126,7 @@ def eliminar_libro(nombre):
     else:
         print("No se han agregado libros aun.")
         time.sleep(1)
+
 #opcion 7
 def modificar_libro(nombre):
     if len(libros) > 0:
@@ -146,8 +153,9 @@ def modificar_libro(nombre):
         print("No se han agregado libros aun.")
         time.sleep(1)
         
+
 #opción 8
-def mostrar_estadisticas(nombre):
+def mostrar_estadisticas():
     total = len(libros)
     contador_disponibles = 0
     contador_prestados = 0
