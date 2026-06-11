@@ -32,15 +32,18 @@ while acceso:
     elif opcion == 2:
         mostrar_libros()
     elif opcion == 3:
-        nombre = str(input("Ingrese nombre de libro a buscar: ")).title()
+        nombre = str(input("Ingrese titulo del libro a buscar: ")).title()
         buscar_libro(nombre)
     elif opcion == 4:
-        nombre = str(input("Ingrese nombre de libro a solicitar: ")).title()
+        nombre = str(input("Ingrese titulo del libro a solicitar: ")).title()
         prestar_libro(nombre)
     elif opcion == 5:
-        nombre  = str(input("Ingrese nombre de libro a devolver: ")).title()
+        nombre  = str(input("Ingrese titulo del libro a devolver: ")).title()
         devolver_libro(nombre)
     elif opcion == 6:
+        nombre = str(input("Ingrese titulo del libro a eliminar: ")).title()
+        eliminar_libro(nombre)
+        
         print("")
     elif opcion == 7:
         print("")
